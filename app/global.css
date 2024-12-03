@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.notion-simple-table {
+    @apply w-full;
+}
+
+.dark .notion {
+    --fg-color: rgba(255, 255, 255, 0.9);
+    --fg-color-0: var(--fg-color);
+    --fg-color-1: var(--fg-color);
+    --fg-color-2: var(--fg-color);
+    --fg-color-3: var(--fg-color);
+    --fg-color-4: var(--fg-color);
+    --fg-color-5: theme('colors.fd-border');
+    --fg-color-6: #fff;
+    --fg-color-icon: theme('colors.fd-muted.foreground');
+
+    --bg-color: theme('colors.fd-background');
+    --bg-color-0: theme('colors.fd-secondary.DEFAULT');
+    --bg-color-1: rgb(63, 68, 71);
+    --bg-color-2: rgba(135, 131, 120, 0.15);
+}
